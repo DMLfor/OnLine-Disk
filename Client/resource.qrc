@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/photo">
+        <file>file-open.png</file>
+        <file>file.png</file>
+        <file>upload.png</file>
+        <file>download.png</file>
+        <file>sound.wav</file>
+    </qresource>
+</RCC>

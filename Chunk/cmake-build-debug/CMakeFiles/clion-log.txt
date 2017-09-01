@@ -1,0 +1,7 @@
+/opt/soft/clion-2017.2.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/dblank/dropbox/chunk
+-- Boost version: 1.62.0
+-- Found the following Boost libraries:
+--   system
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dblank/dropbox/chunk/cmake-build-debug

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UpDown</class>
+ <widget class="QDialog" name="UpDown">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>dblank Drobox</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="fileListLable">
+      <attribute name="title">
+       <string>文件列表</string>
+      </attribute>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>160</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>文件列表</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>411</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLineEdit" name="uploadPath"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="downloadPath"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>30</y>
+         <width>103</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="upload">
+          <property name="toolTip">
+           <string>上传</string>
+          </property>
+          <property name="statusTip">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resource.qrc">
+            <normaloff>:/new/photo/upload.png</normaloff>:/new/photo/upload.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="download">
+          <property name="toolTip">
+           <string>下载</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resource.qrc">
+            <normaloff>:/new/photo/download.png</normaloff>:/new/photo/download.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="openFile">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>46</y>
+         <width>28</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>选择文件</string>
+       </property>
+       <property name="statusTip">
+        <string>Open</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/new/photo/file-open.png</normaloff>:/new/photo/file-open.png</iconset>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="fileListWidge">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>190</y>
+         <width>411</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="movement">
+        <enum>QListView::Static</enum>
+       </property>
+       <property name="viewMode">
+        <enum>QListView::IconMode</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="downloaded">
+      <attribute name="title">
+       <string>已下载(0)</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QListWidget" name="downloadedList">
+         <property name="viewMode">
+          <enum>QListView::IconMode</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="loading">
+      <attribute name="title">
+       <string> 正在传输(0)</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="4" column="1">
+        <widget class="QListWidget" name="loadingList"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

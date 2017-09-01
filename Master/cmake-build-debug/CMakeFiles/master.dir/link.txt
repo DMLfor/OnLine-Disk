@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/master.dir/main.cpp.o CMakeFiles/master.dir/master.cpp.o  -o master /usr/lib/x86_64-linux-gnu/libboost_system.so -lmuduo_base_cpp11 -lmuduo_net_cpp11 -lpthread -ljsoncpp 

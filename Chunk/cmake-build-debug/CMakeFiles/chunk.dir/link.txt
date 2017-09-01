@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/chunk.dir/main.cpp.o CMakeFiles/chunk.dir/chunk.cpp.o  -o chunk /usr/lib/x86_64-linux-gnu/libboost_system.so -lmuduo_base_cpp11 -lmuduo_net_cpp11 -lpthread -ljsoncpp 
